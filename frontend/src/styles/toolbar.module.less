@@ -1,0 +1,35 @@
+@import "./variables.less";
+
+.toolbar {
+  padding: @spacing-lg;
+  background: @gradient-primary;
+  border-bottom: 2px solid @border-color;
+  box-shadow: @shadow-sm;
+
+  @media (max-width: 768px) {
+    padding: @spacing-md;
+  }
+
+  .title {
+    color: @white;
+    font-size: @font-xl;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      font-size: @font-lg;
+      margin-bottom: @spacing-sm;
+    }
+  }
+
+  .nodeContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 10px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+      gap: @spacing-sm;
+    }
+  }
+}

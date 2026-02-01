@@ -1,0 +1,41 @@
+@import "./variables.less";
+
+.textNode {
+  border: 2px solid @border-color;
+  border-radius: @border-radius;
+  background: @gradient-primary;
+  padding: @spacing-md;
+  box-shadow: @shadow-md;
+  color: @white;
+  transition: all 0.3s ease;
+}
+
+.header {
+  font-weight: bold;
+  font-size: @font-md;
+  margin-bottom: @spacing-sm;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 6px;
+}
+
+.label {
+  display: block;
+  font-size: @font-xs;
+  margin-bottom: @spacing-xs;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 60px;
+  padding: 6px;
+  border-radius: @border-radius-sm;
+  border: 1px solid #ddd;
+  font-size: @font-sm;
+  resize: vertical;
+  font-family: monospace;
+}
+
+.handle {
+  background: @white;
+}

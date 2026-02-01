@@ -1,0 +1,26 @@
+@import "./variables.less";
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: @bg-light;
+}
+
+.layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+}

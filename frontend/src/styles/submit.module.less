@@ -1,0 +1,139 @@
+@import "./variables.less";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: @spacing-xl;
+  gap: @spacing-md;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    padding: @spacing-md;
+    gap: @spacing-sm;
+  }
+}
+
+.saveButton {
+  padding: @spacing-md 32px;
+  font-size: @font-lg;
+  font-weight: bold;
+  color: @white;
+  background: @gradient-success;
+  border: none;
+  border-radius: @border-radius;
+  cursor: pointer;
+  box-shadow: @shadow-md;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+
+  @media (max-width: 768px) {
+    padding: @spacing-sm @spacing-lg;
+    font-size: @font-md;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.submitButton {
+  padding: @spacing-md 32px;
+  font-size: @font-lg;
+  font-weight: bold;
+  color: @white;
+  background: @gradient-primary;
+  border: none;
+  border-radius: @border-radius;
+  cursor: pointer;
+  box-shadow: @shadow-md;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+
+  @media (max-width: 768px) {
+    padding: @spacing-sm @spacing-lg;
+    font-size: @font-md;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.saveDialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.saveDialogContent {
+  background: @white;
+  padding: @spacing-xl;
+  border-radius: @border-radius;
+  min-width: 400px;
+  box-shadow: @shadow-lg;
+
+  @media (max-width: 768px) {
+    min-width: 90vw;
+    padding: @spacing-lg;
+  }
+
+  h3 {
+    margin: 0 0 @spacing-lg 0;
+    color: @text-dark;
+  }
+}
+
+.saveInput {
+  width: 100%;
+  padding: @spacing-md;
+  border: 1px solid #ddd;
+  border-radius: @border-radius-sm;
+  font-size: @font-md;
+  margin-bottom: @spacing-lg;
+}
+
+.saveActions {
+  display: flex;
+  gap: @spacing-md;
+  justify-content: flex-end;
+}
+
+.cancelButton {
+  padding: @spacing-sm @spacing-lg;
+  background: #e5e7eb;
+  color: @text-dark;
+  border: none;
+  border-radius: @border-radius-sm;
+  cursor: pointer;
+  font-weight: 600;
+
+  &:hover {
+    background: #d1d5db;
+  }
+}
+
+.confirmButton {
+  padding: @spacing-sm @spacing-lg;
+  background: @gradient-primary;
+  color: @white;
+  border: none;
+  border-radius: @border-radius-sm;
+  cursor: pointer;
+  font-weight: 600;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

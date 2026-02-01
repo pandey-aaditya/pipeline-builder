@@ -1,0 +1,28 @@
+@import "./variables.less";
+
+.draggableNode {
+  cursor: grab;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: @border-radius;
+  background: @gradient-primary;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: @shadow-sm;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .label {
+    color: @white;
+    font-weight: 600;
+    font-size: @font-sm + 1px;
+  }
+}

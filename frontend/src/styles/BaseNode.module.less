@@ -1,0 +1,58 @@
+@import "./variables.less";
+
+.baseNode {
+  border: 2px solid @border-color;
+  border-radius: @border-radius;
+  background: @gradient-primary;
+  padding: @spacing-md;
+  box-shadow: @shadow-md;
+  color: @white;
+}
+
+.header {
+  font-weight: bold;
+  font-size: @font-md;
+  margin-bottom: @spacing-sm;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 6px;
+}
+
+.content {
+  font-size: @font-sm;
+}
+
+.description {
+  text-align: center;
+  font-size: @font-xs;
+  opacity: 0.9;
+}
+
+.input {
+  width: 100%;
+  padding: @spacing-xs;
+  margin-top: @spacing-xs;
+  border-radius: @border-radius-sm;
+  border: 1px solid #ddd;
+  font-size: @font-sm;
+}
+
+.select {
+  width: 100%;
+  padding: @spacing-xs;
+  margin-top: @spacing-xs;
+  border-radius: @border-radius-sm;
+  border: 1px solid #ddd;
+  font-size: @font-sm;
+  cursor: pointer;
+}
+
+.label {
+  display: block;
+  margin-bottom: @spacing-sm;
+  font-size: @font-xs;
+}
+
+.handle {
+  background: @white;
+}
